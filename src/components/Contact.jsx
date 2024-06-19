@@ -8,9 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 
-//template_hdwde6m
-// gtfoselim24.
-//t1VQ1IWrjflT2Tn8V
+
 
 const Contact = () => {
   const formRef = useRef();
@@ -38,8 +36,8 @@ const Contact = () => {
 
     emailjs
       .send(
-       'gtfoselim24.',
-       'template_hdwde6m',
+       'service_ID',
+       'Template_ID',
         {
           from_name: form.name,
           to_name: "Med Selim",
@@ -47,7 +45,7 @@ const Contact = () => {
           to_email: "mohamedselim.ghazouani@gmail.com",
           message: form.message,
         },
-        't1VQ1IWrjflT2Tn8V',
+        'Public_Key',
       )
       .then(
         () => {
